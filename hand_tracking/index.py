@@ -29,10 +29,10 @@ def main():
 
     print(detector)
 
-    # id = 0
-    # for img in images:
-    #     cv2.imshow(f"Image {id}", detector.findHands(resize(img)))
-    #     id += 1
+    id = 0
+    for img in images:
+        cv2.imshow(f"Image {id}", detector.findHands(resize(img)))
+        id += 1
 
     index = 2
     cv2.imshow(f"Image {id}", detector.findHands(resize(images[index])))
